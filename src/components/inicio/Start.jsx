@@ -9,6 +9,7 @@ import carteroImage from '../../../public/img/cartero.png';
 import monedasImage from '../../../public/img/monedas.png';
 import reunionImage from '../../../public/img/reunion.png';
 import globallyImage from '../../../public/img/globally.png';
+import questionsImage from '../../../public/img/questions.png';
 import './start.css'
 
 function Start  () {
@@ -109,12 +110,28 @@ function Start  () {
           <Col md={6} className="d-flex justify-content-center align-items-center">
             <img
               src={globallyImage}
-              alt="Imagen conecciób global"
+              alt="Imagen de conección global"
               className="img-fluid"
             />
           </Col>
 
-          
+        </Row>
+        <Row className="mb-5">
+            <Col md={6} className="d-flex justify-content-center align-items-center">
+            <img
+              src={questionsImage}
+              alt="Imagen de la reunión"
+              className="img-fluid"/>
+            </Col>
+          <Col md={6} className="d-flex flex-column justify-content-center text-start">
+            <h1 className="text-center text-primary">Do you have any questions? Write to us!</h1>
+            <h5 className="">
+            We have highly qualified and experienced staff who can help you resolve any questions or problems you may have with your purchase. <br /><br />
+            </h5>
+            <div className="d-flex justify-content-center ">
+              <Button as="input" type="button" class="btn btn-outline-primary w-25" value="See more" />
+            </div>
+          </Col>
         </Row>
       </Container>
     );
